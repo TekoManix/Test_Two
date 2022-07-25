@@ -10,10 +10,21 @@ public class Part_2_2 : MonoBehaviour
     {
         List<int> list = new List<int> { 11, 2, 5, 4, 5, 6, 217, 8, 119, 10, 11, 12, 
             133, 14, 15 ,16 ,117 ,18 ,19, 20, 291, 22, 3, 24, 25};
+        List<int> even = new List<int>();
         int sum = 0;
-
-
-
+            
+        for (int i = 0; i < list.Count; i++)
+        {
+            if (i % 2 == 0)
+            {
+                even.Add(i);
+            }
+        }
+        for (int i = 0; i < even.Count; i++)
+        {
+            sum += even[i];
+        }
         print(sum);
+
     }
 }

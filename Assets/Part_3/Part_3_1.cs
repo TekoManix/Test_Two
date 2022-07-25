@@ -19,4 +19,20 @@ public class Part_3_1 : MonoBehaviour
 
     //Overload the function by creating another Area function but this one takes in
     //float values and returns a float  (1pt) 
+    int a = 0;
+    
+    private void Area(int length, int width)
+    {
+        a = length * width;
+        print(a);
+    }
+    private void floatArea(int Area)
+    {
+         print((float)Area);
+        
+
+        
+       
+        
+    }
 }

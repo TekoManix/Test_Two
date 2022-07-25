@@ -11,8 +11,24 @@ public class Part_2_1 : MonoBehaviour
     {
         int[] array = new int[10] { 22, 58, 7, 91, 23, 354, 1, 2, 40, 12 };
         List<int> list = new List<int>();
-
-       
+        List<int> lessthan30 = new List<int>();
+        int i;
+        for (i = 1; i <= 30; i++)
+        {
+            if (i % 2 == 0)
+            {
+                list.Add(i);
+            }
+        }
+        for (i = 1; i <= 30; i++)
+        {
+            if (i <= 30)
+            {
+                lessthan30.Add(i);
+                print(lessthan30[i]);
+            }
+        }
+        
     }
-
 }
+
